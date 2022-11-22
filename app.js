@@ -63,9 +63,9 @@ macbook_scene.on("update", e => {
 
 setInterval(() => {
     delay += (scrollPos - delay) * accelAmount;
-    
+    macbook_scene_delay += (macbook_scene_scrollPos - macbook_scene_delay) * accelAmount;
     intro_video.currentTime = delay;
-    macbook_video.currentTime = macbook_scene_scrollPos;
+    macbook_video.currentTime = macbook_scene_delay;
 }, 40)
 
 
